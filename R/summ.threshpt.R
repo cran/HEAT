@@ -1,5 +1,6 @@
 summ.threshpt <-
-function(obj){
+function(obj)
+{
 
       summary_results<-list()
       thresh_best<-obj$best_fit
@@ -7,7 +8,6 @@ function(obj){
       threshold<-thresh_best[8]
       parm_coef=obj$parm_coef
       myform<-obj$formula
-
 
       Best_fit<-matrix(0, 2,3)
       rownames(Best_fit)<-c("<Threshold", ">=Threshold")
@@ -20,7 +20,6 @@ function(obj){
       Best_fit[2,2]<-thresh_best[5]
       Best_fit[2,3]<-thresh_best[6]
 
-
       summary_results[[1]]<-myform
       summary_results[[2]]<-dev
       summary_results[[3]]<-threshold
@@ -30,4 +29,5 @@ function(obj){
       names(summary_results)<- c("Formula", "Deviance", "Threshold", "Best fit")
 
       return(summary_results)
-      }
+
+}

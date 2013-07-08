@@ -1,12 +1,12 @@
-f1778511b952678dbfa06e72bfa08695 *DESCRIPTION
+2224fd9ee677bad1225fe220a3335ce8 *DESCRIPTION
 df390c53434517b304ac5db487184641 *NAMESPACE
 a2ecfa38ec68922d541af7cb70067d8f *R/lagdata.R
 215e9350add3125ceefdae18b9dbdb79 *R/read6city.R
-0f44e87365cfb2436485623c3387bdd4 *R/rrcalc.R
-5ad960f82f3a8db45ee61f0aa6450b7c *R/summ.threshpt.R
-5301aab6937c16328fc15e885e4a9a4f *R/threshpt.R
+99bb576d463b3609867c292f6ae46908 *R/rrcalc.R
+fed67512cde30ce0c83a0201c92282f1 *R/summ.threshpt.R
+dfc5309441ebc5d4981e5ab1cb26df01 *R/threshpt.R
 546f7acc0337361aa3f57e83664758e5 *data/mort.rda
-8c5b54d4f1752caf3c9ac8768d7b68e4 *man/heat-package.Rd
+3136654e703348a7257dca4f6e5cfced *man/heat-package.Rd
 2e1fd5aa8449431669d455262c78a0c8 *man/lagdata.Rd
 39b33851325a7ca22645a1f6f9dd5ebc *man/mort.Rd
 3f2cd31f1742754ee21f37eea3b41ae6 *man/read6city.Rd

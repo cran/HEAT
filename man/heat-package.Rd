@@ -14,8 +14,8 @@ estimate threshold points in a nonlinear relationship.
 \tabular{ll}{
 Package: \tab HEAT\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2013-06-11\cr
+Version: \tab 1.1\cr
+Date: \tab 2013-07-08\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }
@@ -29,7 +29,7 @@ The package was supported by the Basic Science Research Program (#2010-0009581),
 \author{
 Youn-Hee Lim and Ho Kim
 
-Maintainer: Il-Sang Ohn <star-on@hanmail.net>
+Maintainer: Il-Sang Ohn <byeolbaragi@gmail.com>
 
 }
 \references{
