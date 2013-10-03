@@ -1,9 +1,9 @@
 read6city <-
-function(mydata, code){
+function(data, code){
 
-citydata=subset(mydata,mydata[,1]==code)
-ncc=dim(mydata)[2]
-nrr=dim(mydata)[1]
+citydata=subset(data, data[,1]==code)
+ncc=dim(data)[2]
+nrr=dim(data)[1]
 
 cbind(citydata)
 }

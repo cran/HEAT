@@ -2,45 +2,52 @@
 \alias{lagdata}
 
 \title{
-Single and moving average (MVA) lag days
+Creating single lagged and moving average variables
 }
 \description{
-Create single and moving average (MVA) lag days
+Function \code{lagdata} creates single lagged and moving average variables of the lag number that the user designate.
 }
 \usage{
-lagdata(mydata, varlist, laglength)
+lagdata(data, varlist, laglength)
 }
 
 \arguments{
-  \item{mydata}{
-	Data includes lagged variables
+  \item{data}{
+	Data includes lagged variables.
 }
   \item{varlist}{
-	Variable name to be lagged
+	List of variables to be lagged.
 }
   \item{laglength}{
-	Number of lag days
+	Number of lag days.
 }
+}
+
+\details{
+Certain exposure on the previous days has an effect on the event on now day. This effect is referred to as the lagged effects. Studies wanting to estimate lagged effects would include the exposure value for previous days in the time series model, and those wanting to estimate cumulative effect of the same day and the previous days would include the moving average value of the exposure.
 }
 
 \value{
-varname_sxx for single lag days and varname_mxx for moving average lag days
+\code{lagdata} gives single lagged variables (varname_sxx, xx indicates lag length) and moving average variables (varname_mxx).
 }
+
 \references{
-Peng and Dominici. 2010. Statistical Methods for Environmental Epidemiology with R. Springer
+Dominici F. Time-series analysis of air pollution and mortality: a statistical review. Research report
+(Health Effects Institute), (123):3, 2004. \cr
+Gasparrini A and Armstrong B. Time series analysis on the health effects of temperature: advancements
+and limitations. Environmental research, 110(6):633-638, 2010.
 }
+
 \author{
-Youn-Hee Lim and Ho Kim
+Youn-Hee Lim, Il-Sang Ohn, and Ho Kim
 }
 
 \examples{
-
+# read the data
 data(mort)
-seoul=read6city(mort, 11)
-seoul_lag=lagdata(seoul, c("meantemp","mintemp","meanpm10","meanhumi"), 5)
+seoul = read6city(mort, 11)
 
+# create lagged and moving average variables
+seoul_lag = lagdata(seoul, c("meantemp", "mintemp", "meanpm10", "meanhumi"), 5)
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+

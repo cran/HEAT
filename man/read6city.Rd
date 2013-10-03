@@ -2,18 +2,19 @@
 \alias{read6city}
 
 \title{
-read6city
+Read data for six major cities in Korea
 }
+
 \description{
-Read 6 major cities in Korea
+\code{read6city} extracts a city-specific data set from \code{mort} data set. 
 }
 \usage{
-read6city(mydata, code)
+read6city(data, code)
 }
 
 \arguments{
-  \item{mydata}{
-	mydata can be 'mort' from data(mort)
+  \item{data}{
+	data can be \code{mort} from \code{data(mort)}.
 	}
   \item{code}{
 	code must be one of the following:
@@ -25,20 +26,17 @@ read6city(mydata, code)
 	  24 for Gwangju
 }
 }
-\details{
-	Extract a city from data
-}
 
 
 \author{
-Youn-Hee Lim and Ho Kim
+Youn-Hee Lim, Il-Sang Ohn, and Ho Kim
 }
 
 
 \examples{
 data(mort)
-seoul=read6city(mort, 11)
-
+seoul = read6city(mort, 11)
 }
+
 \keyword{ ~kwd1 }
 \keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

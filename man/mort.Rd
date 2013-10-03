@@ -2,10 +2,10 @@
 \alias{mort}
 \docType{data}
 \title{
-Mortality data with air pollution and weather data
+Data for Korean six cities
 }
 \description{
-Korean 6 cities
+Mortality, air pollution and, meteorological data for six major cities (Seoul, Busan, Daegu, Incheon, Gwangju, and Daejeon) in Korea
 }
 \usage{data(mort)}
 \format{

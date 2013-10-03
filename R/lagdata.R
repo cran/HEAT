@@ -1,6 +1,8 @@
 lagdata <-
-function(mydata,varlist, laglength) { 
-    
+function(data,varlist, laglength) {
+ 
+    	mydata=data
+
     length(varlist)
     for (iv in 1:length(varlist))
     { 

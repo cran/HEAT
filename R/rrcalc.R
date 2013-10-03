@@ -1,8 +1,8 @@
 rrcalc <-
-function (obj, rrunit = 1)
+function (object, rrunit = 1)
 {
 
-    a <- obj$best_fit
+    a <- object$best.fit
     beta_1<-a[1]
     se_1<-a[2]
     beta_2<-a[4]
